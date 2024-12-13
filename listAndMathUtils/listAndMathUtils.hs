@@ -1,3 +1,6 @@
+-- MIT License
+-- Copyright (c) 2024 Urrutia Alfaro Isaac Arturo
+
 {-|
 Module      : ListAndMathUtils
 Description : This module contains basic list manipulation and mathematical functions.
