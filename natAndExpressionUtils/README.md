@@ -34,7 +34,7 @@
 
 ## Installation
 
-1. Clone this repository or download the `NatAndExpressionUtils.hs` file.
+1. Clone this repository or download the `natAndExpressionUtils.hs` file.
 2. Make sure you have GHC and GHCi installed on your system.
 3. Save the file in your project directory.
 
@@ -49,65 +49,16 @@
 
 2. Load the module:
    ```haskell
-   :load NatAndExpressionUtils.hs
+   :load natAndExpressionUtils.hs
    ```
 
 3. Use the functions defined in the module. Examples:
 
    ```haskell
-   suma (Suc (Suc Cero)) (Suc Cero)
-   -- Output:Suc (Suc (Suc Cero))
-
-   longitud (Cons 1 (Cons 2 Vacia))
-   -- Output: Suc (Suc Cero)
-   
-   contarConstantes (Suma (Num Pos Cero) (Var "x"))
-   -- Output: 1
+   suma (Suc (Suc Cero)) (Suc Cero) -- Output:Suc (Suc (Suc Cero))
+   longitud (Cons 1 (Cons 2 Vacia)) -- Output: Suc (Suc Cero)
+   contarConstantes (Suma (Num Pos Cero) (Var "x")) -- Output: 1 
    ```
-
----
-
-## Functions
-
-### 1. **Operations on Natural Numbers**
-- `suma`  
-  Adds two natural numbers.
-
-- `prod`  
-  Multiplies two natural numbers.
-
-- `fac`  
-  Calculates the factorial of a natural number.
-
-- `pot`  
-  Computes the power of a natural number raised to another.
-
-- `ant`  
-  Returns the predecessor of a natural number.
-
----
-
-### 2. **Operations on Custom Lists**
-- `longitud`  
-  Returns the length of a custom list.
-
-- `concate`  
-  Concatenates two custom lists.
-
-- `rev`  
-  Reverses a custom list.
-
----
-
-### 3. **Expression Analysis**
-- `contarConstantes`  
-  Counts the number of constants in an expression.
-
-- `contarVariables`  
-  Counts the number of variables in an expression.
-
-- `contarOperadores`  
-  Counts the number of operators in an expression.
 
 ---
 
@@ -140,9 +91,9 @@ data Lista a = Vacia | Cons a (Lista a)
 
 ## Functions
 
-### Operations on Natural Numbers
+### 1. Operations on Natural Numbers
 
-- **`suma`**  
+- **`suma`** 
   Adds two natural numbers.
   ```haskell
   suma :: Nat -> Nat -> Nat
@@ -174,7 +125,7 @@ data Lista a = Vacia | Cons a (Lista a)
 
 ---
 
-### Operations on Custom Lists
+### 2. Operations on Custom Lists
 
 - **`longitud`**  
   Returns the length of a custom list.
@@ -196,7 +147,7 @@ data Lista a = Vacia | Cons a (Lista a)
 
 ---
 
-### Expression Analysis
+### 3. Expression Analysis
 
 - **`contarConstantes`**  
   Counts the number of constants in an expression.
