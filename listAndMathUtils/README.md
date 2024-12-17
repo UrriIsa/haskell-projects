@@ -2,6 +2,8 @@
 
 `ListAndMathUtils` is a Haskell module that provides basic utilities for list manipulation and mathematical computations. The module includes functions for reversing lists, inserting numbers into sorted lists, sorting using Bubble Sort, computing Fibonacci numbers, and calculating factorials.
 
+---
+
 ## Table of Contents
 
 - [Features](#features)
@@ -11,6 +13,8 @@
 - [Functions](#functions)
 - [License](#license)
 
+---
+
 ## Features
 
 - Reverse a list recursively.
@@ -19,15 +23,21 @@
 - Compute Fibonacci numbers recursively.
 - Calculate factorials of integers recursively.
 
+---
+
 ## Requirements
 
 - [GHC (Glasgow Haskell Compiler)](https://www.haskell.org/ghc/) version 8.0 or higher.
 
+---
+
 ## Installation
 
-1. Clone this repository or download the `ListAndMathUtils.hs` file.
+1. Clone this repository or download the `listAndMathUtils.hs` file.
 2. Make sure GHC and GHCi are installed on your system.
 3. Save the file in your project directory.
+
+---
 
 ## Usage
 
@@ -37,7 +47,7 @@
    ```
 2. Load the module:
    ```haskell
-   :load ListAndMathUtils.hs
+   :load listAndMathUtils.hs
    ```
 3. Use the functions provided by the module. For example:
    ```haskell
@@ -47,24 +57,41 @@
    fib 5                       -- Output: 5
    factorial 5                 -- Output: 120
    ```
+---
 
 ## Functions
 
-### 1. `revertirLista`
-Reverses a list recursively.
+### 1. `fib`
+   Computes the nth number in the Fibonacci sequence.
+   ```haskell
+      fib :: Integer -> Integer
+   ```
 
-### 2. `insertaNum`
-Inserts a number into a sorted list while maintaining the order.
+### 2. `factorial`
+   Calculates the factorial of an integer.
+   ```haskell
+      factorial :: Integer -> Integer
+   ```
 
-### 3. `bubbleSort`
-Sorts a list using the Bubble Sort algorithm.
+### 3. `revertirLista`
+   Reverses a list recursively.
+   ```haskell
+      revertirLista :: [a] -> [a]
+   ```
 
-### 4. `fib`
-Computes the nth number in the Fibonacci sequence.
+### 4. `insertaNum`
+   Inserts a number into a sorted list while maintaining the order.
+   ```haskell
+      insertaNum :: Integer -> [Integer] -> [Integer]
+   ```
 
-### 5. `factorial`
-Calculates the factorial of an integer.
+### 5. `bubbleSort`
+   Sorts a list using the Bubble Sort algorithm.
+   ```haskell
+      bubbleSort :: Ord a => [a] -> [a]
+   ```
 
+---
 
 ## License
 
