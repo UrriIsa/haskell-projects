@@ -30,14 +30,14 @@ This module contains utilities for working with binary trees in Haskell, includi
 
 ## Requirements
 
-- Haskell compiler (GHC)
-- `Data.List` library (included in the base library)
+- [GHC (Glasgow Haskell Compiler)](https://www.haskell.org/ghc/) version 8.0 or higher.
+-  Data.List` library (included in the base library)
 
 ---
 
 ## Installation
 
-1. Clone this repository or download the `NatAndExpressionUtils.hs` file.
+1. Clone this repository or download the `binaryTreeUtils.hs` file.
 2. Make sure you have GHC and GHCi installed on your system.
 3. Save the file in your project directory.
 
@@ -69,7 +69,7 @@ This module contains utilities for working with binary trees in Haskell, includi
 ## Data Types
 
 ### BinaryTree
-
+A custom data type for binary trees. It is created recursively, its node can be empty or have another of the same type.
 ```haskell
 data BinaryTree = Void | Node BinaryTree A BinaryTree
 ```
@@ -78,22 +78,40 @@ data BinaryTree = Void | Node BinaryTree A BinaryTree
 - `Node`: Represents a tree node with a value of type `A` and two subtrees.
 
 ### A
-
+`A` is an alias for `Int` and represents the type of values stored in the tree.  
 ```haskell
 type A = Int
 ```
-
-`A` is an alias for `Int` and represents the type of values stored in the tree.
 
 ## Functions
 
 ### Operations on Binary Trees
 
-- **height**: Calculates the height of a binary tree.
-- **size**: Calculates the size (number of nodes) of a binary tree.
-- **member**: Checks if a value exists in the binary tree.
-- **hojas**: Retrieves the leaves of a binary tree.
-- **sumTree**: Computes the sum of all the nodes in the tree.
+- **`height`**
+   Calculates the height of a binary tree.
+   ```haskell
+      height :: BinaryTree -> Int
+   ```
+- **`size`**
+   Calculates the size (number of nodes) of a binary tree.
+   ```haskell
+      size :: BinaryTree -> Int
+   ```
+- **`member`**
+   Checks if a value exists in the binary tree.
+   ```haskell
+      member :: A -> BinaryTree -> Bool
+   ```
+- **`hojas`**
+   Retrieves the leaves of a binary tree.
+   ```haskell
+      hojas :: BinaryTree -> [A]
+   ```
+- **`sumTree`**
+   Computes the sum of all the nodes in the tree.
+   ```haskell
+      sumTree :: BinaryTree -> Int
+   ```
 
 ---
 
