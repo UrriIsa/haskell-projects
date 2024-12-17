@@ -14,7 +14,6 @@
    - [Operations on Natural Numbers](#operations-on-natural-numbers)
    - [Operations on Custom Lists](#operations-on-custom-lists)
    - [Expression Analysis](#expression-analysis)
-- [Examples](#examples)
 - [License](#license)
 
 ---
@@ -56,39 +55,13 @@
 3. Use the functions defined in the module. Examples:
 
    ```haskell
-   -- Operations on natural numbers
-   let n1 = Suc (Suc Cero)  -- Represents 2
-   let n2 = Suc (Suc (Suc Cero))  -- Represents 3
+   suma (Suc (Suc Cero)) (Suc Cero)
+   -- Output:Suc (Suc (Suc Cero))
 
-   suma n1 n2
-   -- Output: Suc (Suc (Suc (Suc (Suc Cero))))  -- 5
-
-   prod n1 n2
-   -- Output: Suc (Suc (Suc (Suc (Suc (Suc Cero)))))  -- 6
-
-   fac n2
-   -- Output: Suc (Suc (Suc (Suc (Suc (Suc Cero)))))  -- 6 (factorial of 3)
-
-   -- Manipulation of custom lists
-   let lista1 = Cons 1 (Cons 2 Vacia)  -- [1, 2]
-   let lista2 = Cons 3 (Cons 4 Vacia)  -- [3, 4]
-
-   concate lista1 lista2
-   -- Output: Cons 1 (Cons 2 (Cons 3 (Cons 4 Vacia)))  -- [1, 2, 3, 4]
-
-   rev lista1
-   -- Output: Cons 2 (Cons 1 Vacia)  -- [2, 1]
-
-   -- Expression analysis
-   let expr = Suma (Num Pos Cero) (Var "x")
-
-   contarConstantes expr
-   -- Output: 1
-
-   contarVariables expr
-   -- Output: 1
-
-   contarOperadores expr
+   longitud (Cons 1 (Cons 2 Vacia))
+   -- Output: Suc (Suc Cero)
+   
+   contarConstantes (Suma (Num Pos Cero) (Var "x"))
    -- Output: 1
    ```
 
@@ -242,45 +215,6 @@ data Lista a = Vacia | Cons a (Lista a)
   ```haskell
   contarOperadores :: Expresion -> Int
   ```
-
----
-
-## Examples
-
-### Natural Numbers Example
-
-```haskell
-let n1 = Suc (Suc Cero)  -- 2
-let n2 = Suc (Suc (Suc Cero))  -- 3
-
-suma n1 n2
--- Result: Suc (Suc (Suc (Suc (Suc Cero))))  -- 5
-```
-
-### Custom List Example
-
-```haskell
-let lista1 = Cons 1 (Cons 2 Vacia)  -- [1, 2]
-let lista2 = Cons 3 (Cons 4 Vacia)  -- [3, 4]
-
-concate lista1 lista2
--- Result: Cons 1 (Cons 2 (Cons 3 (Cons 4 Vacia)))  -- [1, 2, 3, 4]
-```
-
-### Expression Example
-
-```haskell
-let expr = Suma (Num Pos Cero) (Var "x")
-
-contarConstantes expr
--- Result: 1
-
-contarVariables expr
--- Result: 1
-
-contarOperadores expr
--- Result: 1
-```
 
 ---
 
