@@ -1,7 +1,7 @@
 
 # NatAndExpressionUtils
 
-`NatAndExpressionUtils` es un módulo en Haskell que proporciona operaciones sobre números naturales, listas personalizadas y expresiones algebraicas. Incluye funciones para realizar sumas, productos, cálculos factoriales, así como el análisis de expresiones.
+`NatAndExpressionUtils` is a Haskell module that provides operations on natural numbers, custom lists, and algebraic expressions. It includes functions for performing addition, multiplication, factorial calculations, and analyzing expressions.
 
 ## Table of Contents
 
@@ -21,44 +21,44 @@
 
 ## Features
 
-- Operaciones básicas con números naturales (suma, producto, factorial, potencia).
-- Manipulación de listas personalizadas (longitud, concatenación y reversión).
-- Análisis de expresiones algebraicas (conteo de constantes, variables y operadores).
+- Basic operations with natural numbers (sum, product, factorial, power).
+- Manipulation of custom lists (length, concatenation, and reversal).
+- Analysis of algebraic expressions (counting constants, variables, and operators).
 
 ---
 
 ## Requirements
 
-- [GHC (Glasgow Haskell Compiler)](https://www.haskell.org/ghc/) versión 8.0 o superior.
+- [GHC (Glasgow Haskell Compiler)](https://www.haskell.org/ghc/) version 8.0 or higher.
 
 ---
 
 ## Installation
 
-1. Clona este repositorio o descarga el archivo `NatAndExpressionUtils.hs`.
-2. Asegúrate de tener GHC y GHCi instalados en tu sistema.
-3. Guarda el archivo en el directorio de tu proyecto.
+1. Clone this repository or download the `NatAndExpressionUtils.hs` file.
+2. Make sure you have GHC and GHCi installed on your system.
+3. Save the file in your project directory.
 
 ---
 
 ## Usage
 
-1. Abre GHCi (el intérprete de Haskell) desde tu terminal:
+1. Open GHCi (the Haskell interpreter) from your terminal:
    ```bash
    ghci
    ```
 
-2. Carga el módulo:
+2. Load the module:
    ```haskell
    :load NatAndExpressionUtils.hs
    ```
 
-3. Utiliza las funciones definidas en el módulo. Ejemplos:
+3. Use the functions defined in the module. Examples:
 
    ```haskell
-   -- Operaciones con números naturales
-   let n1 = Suc (Suc Cero)  -- Representa 2
-   let n2 = Suc (Suc (Suc Cero))  -- Representa 3
+   -- Operations on natural numbers
+   let n1 = Suc (Suc Cero)  -- Represents 2
+   let n2 = Suc (Suc (Suc Cero))  -- Represents 3
 
    suma n1 n2
    -- Output: Suc (Suc (Suc (Suc (Suc Cero))))  -- 5
@@ -67,9 +67,9 @@
    -- Output: Suc (Suc (Suc (Suc (Suc (Suc Cero)))))  -- 6
 
    fac n2
-   -- Output: Suc (Suc (Suc (Suc (Suc (Suc Cero)))))  -- 6 (factorial de 3)
+   -- Output: Suc (Suc (Suc (Suc (Suc (Suc Cero)))))  -- 6 (factorial of 3)
 
-   -- Manipulación de listas personalizadas
+   -- Manipulation of custom lists
    let lista1 = Cons 1 (Cons 2 Vacia)  -- [1, 2]
    let lista2 = Cons 3 (Cons 4 Vacia)  -- [3, 4]
 
@@ -79,7 +79,7 @@
    rev lista1
    -- Output: Cons 2 (Cons 1 Vacia)  -- [2, 1]
 
-   -- Análisis de expresiones
+   -- Expression analysis
    let expr = Suma (Num Pos Cero) (Var "x")
 
    contarConstantes expr
@@ -96,45 +96,45 @@
 
 ## Functions
 
-### 1. **Operaciones sobre números naturales**
+### 1. **Operations on Natural Numbers**
 - `suma`  
-  Suma dos números naturales.
+  Adds two natural numbers.
 
 - `prod`  
-  Multiplica dos números naturales.
+  Multiplies two natural numbers.
 
 - `fac`  
-  Calcula el factorial de un número natural.
+  Calculates the factorial of a natural number.
 
 - `pot`  
-  Eleva un número natural a la potencia de otro.
+  Computes the power of a natural number raised to another.
 
 - `ant`  
-  Devuelve el antecesor de un número natural.
+  Returns the predecessor of a natural number.
 
 ---
 
-### 2. **Manipulación de listas personalizadas**
+### 2. **Operations on Custom Lists**
 - `longitud`  
-  Devuelve la longitud de una lista.
+  Returns the length of a custom list.
 
 - `concate`  
-  Concatena dos listas.
+  Concatenates two custom lists.
 
 - `rev`  
-  Invierte una lista.
+  Reverses a custom list.
 
 ---
 
-### 3. **Análisis de expresiones algebraicas**
+### 3. **Expression Analysis**
 - `contarConstantes`  
-  Cuenta el número de constantes en una expresión.
+  Counts the number of constants in an expression.
 
 - `contarVariables`  
-  Cuenta el número de variables en una expresión.
+  Counts the number of variables in an expression.
 
 - `contarOperadores`  
-  Cuenta el número de operadores en una expresión.
+  Counts the number of operators in an expression.
 
 ---
 
@@ -280,9 +280,11 @@ contarVariables expr
 
 contarOperadores expr
 -- Result: 1
+```
 
 ---
 
 ## License
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
