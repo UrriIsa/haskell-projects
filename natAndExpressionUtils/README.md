@@ -1,7 +1,7 @@
 
 # NatAndExpressionUtils
 
-`NatAndExpressionUtils` is a Haskell module that provides operations on natural numbers, custom lists, and algebraic expressions. It includes functions for performing addition, multiplication, factorial calculations, and analyzing expressions.
+`NatAndExpressionUtils` is a Haskell module that provides operations on natural numbers, custom lists, and algebraic expressions. It includes functions for performing addition, multiplication, factorial calculations, and analyzing expressions. It was done in my first semester.
 
 ## Table of Contents
 
