@@ -27,7 +27,7 @@ Este módulo contiene utilidades para trabajar con árboles binarios en Haskell,
 - Recuperación de hojas
 - Suma de los valores de los nodos
 
-**Traduction**
+***Traduction :***
 
 This module contains utilities for working with binary trees in Haskell, including the following operations:
 - Height calculation
@@ -43,7 +43,7 @@ This module contains utilities for working with binary trees in Haskell, includi
 - [GHC (Compilador Glasgow Haskell)](https://www.haskell.org/ghc/) versión 8.0 o superior.
 - Biblioteca Data.List` (incluida en la biblioteca base)
 
-Traduction ;
+***Traduction :***
 - [GHC (Glasgow Haskell Compiler)](https://www.haskell.org/ghc/) version 8.0 or higher.
 -  Data.List` library (included in the base library)
 
@@ -54,7 +54,7 @@ Traduction ;
 2. Asegúrate de tener GHC y GHCi instalados en tu sistema.
 3. Guarda el archivo en el directorio de tu proyecto.
 
-Traduction : 
+***Traduction :***
 1. Clone this repository or download the `binaryTreeUtils.hs` file.
 2. Make sure you have GHC and GHCi installed on your system.
 3. Save the file in your project directory.
@@ -80,7 +80,7 @@ Traduction :
    sumTree (Node (Node Void 1 Void) 2 (Node Void 3 Void)) -- Salida: 6
     ```
 
-Traduction :
+***Traduction :***
 1. Open GHCi (Haskell interpreter) from your terminal:
    ```bash
    ghci
@@ -118,7 +118,7 @@ data BinaryTree = Void | Node BinaryTree A BinaryTree
 type A = Int
 ```
 
-Traduction :
+***Traduction :***
 ### BinaryTree
 A custom data type for binary trees. It is created recursively, its node can be empty or have another of the same type.
 ```haskell
@@ -164,7 +164,7 @@ type A = Int
     sumTree :: BinaryTree -> Int
     ```
     
-Taduction : 
+***Taduction :***
 ### Operations on Binary Trees
 
 - **`height`**
@@ -197,4 +197,5 @@ Taduction :
 
 ## Licencia / License
 Este proyecto está licenciado bajo la Licencia MIT. Consulte el archivo [LICENCIA](LICENCIA) para obtener más información.
+***Taduction :***
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
