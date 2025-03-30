@@ -164,7 +164,7 @@ type A = Int
     sumTree :: BinaryTree -> Int
     ```
     
-***Taduction :***
+***Traduction :***
 ### Operations on Binary Trees
 
 - **`height`**
@@ -197,5 +197,5 @@ type A = Int
 
 ## Licencia / License
 Este proyecto está licenciado bajo la Licencia MIT. Consulte el archivo [LICENCIA](LICENCIA) para obtener más información.
-***Taduction :***
+***Traduction :***
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
