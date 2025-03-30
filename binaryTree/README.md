@@ -14,7 +14,6 @@
 - [Uso / Usage](#uso--usage)
 - - [Tipos de Datos / Data Types](#tipos-de-datos--data-types)
 - [Funciones / Functions](#funciones--functions)
-   - [Operaciones sobre Árboles Binarios / Operations on Binary Trees](#operaciones-sobre-arboles-binarios--operations-on-binary-trees)
 - [Licencia / License](#licencia--license)
 
 ---
