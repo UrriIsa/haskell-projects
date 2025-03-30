@@ -27,7 +27,7 @@ Este módulo contiene utilidades para trabajar con árboles binarios en Haskell,
 - Recuperación de hojas
 - Suma de los valores de los nodos
 
-<span style="color:blue;"><strong>Traduction :</strong></span>
+<strong><span style="color:blue;">Traduction :</span></strong>
 
 This module contains utilities for working with binary trees in Haskell, including the following operations:
 - Height calculation
