@@ -8,7 +8,7 @@
 
 ## Table of Contents
 
-- [Características / Features](#características/features)
+- [Características / Features](#características-features)
 - [Requisitos / Requirements](#requirements)
 - [Instalación / Installation](#installation)
 - [Uso / Usage](#usage)
