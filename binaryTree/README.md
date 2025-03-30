@@ -9,13 +9,13 @@
 ## Table of Contents
 
 - [Características / Features](#caracteristicas--features)
-- [Requisitos / Requirements](#requirements)
-- [Instalación / Installation](#installation)
-- [Uso / Usage](#usage)
-- - [Tipos de Datos / Data Types](#data-types)
-- [Funciones / Functions](#functions)
-   - [Operaciones sobre Árboles Binarios / Operations on Binary Trees](#operations-on-binary-trees)
-- [Licencia / License](#license)
+- [Requisitos / Requirements](#requisitos--requirements)
+- [Instalación / Installation](#instalación--installation)
+- [Uso / Usage](#uso--usage)
+- - [Tipos de Datos / Data Types](#tipos-de-datos--data-types)
+- [Funciones / Functions](#funciones--functions)
+   - [Operaciones sobre Árboles Binarios / Operations on Binary Trees](#operaciones-sobre-árboles-binarios--operations-on-binary-trees)
+- [Licencia / License](#licencia--license)
 
 ---
 
@@ -37,7 +37,7 @@ This module contains utilities for working with binary trees in Haskell, includi
 
 ---
 
-## Requirements
+## Requisitos / Requirements
 
 - [GHC (Compilador Glasgow Haskell)](https://www.haskell.org/ghc/) versión 8.0 o superior.
 - Biblioteca Data.List` (incluida en la biblioteca base)
@@ -48,7 +48,7 @@ Traduction ;
 
 ---
 
-## Installation
+## Instalación / Installation
 1. Clona este repositorio o descarga el archivo `binaryTreeUtils.hs`.
 2. Asegúrate de tener GHC y GHCi instalados en tu sistema.
 3. Guarda el archivo en el directorio de tu proyecto.
@@ -61,7 +61,7 @@ Traduction :
 
 ---
 
-## Usage
+## Uso / Usage
 1. Abra GHCi (intérprete de Haskell) desde su terminal:
     ```bash
     ghci
@@ -72,11 +72,11 @@ Traduction :
     ```
 3. Utilice las funciones proporcionadas por el módulo. Por ejemplo:
     ```haskell
-    height (Nodo (Nodo Vacío 1 Vacío) 2 (Nodo Vacío 3 Vacío) -- Salida: 2
-    size (Nodo (Nodo Vacío 1 Vacío) 2 (Nodo Vacío 3 Vacío)) -- Salida: 3
-    member 3 (Nodo (Nodo Vacío 1 Vacío) 2 (Nodo Vacío 3 Vacío)) -- Salida: True
-    hojas (Nodo (Nodo Vacío 1 Vacío) 2 (Nodo Vacío 3 Vacío) -- Salida: [1, 3]
-    sumTree (Nodo (Nodo Vacío 1 Vacío) 2 (Nodo Vacío 3 Vacío)) -- Salida: 6
+   height (Node (Node Void 1 Void) 2 (Node Void 3 Void)) -- Salida: 2
+   size (Node (Node Void 1 Void) 2 (Node Void 3 Void)) -- Salida: 3
+   member 3 (Node (Node Void 1 Void) 2 (Node Void 3 Void)) -- Salida: True
+   hojas (Node (Node Void 1 Void) 2 (Node Void 3 Void)) -- Salida: [1, 3]
+   sumTree (Node (Node Void 1 Void) 2 (Node Void 3 Void)) -- Salida: 6
     ```
 
 Traduction :
@@ -90,22 +90,22 @@ Traduction :
    ```
 3. Use the functions provided by the module. For example:
    ```haskell
-   height (Node (Node Void 1 Void) 2 (Node Void 3 Void) -- Output: 2
+   height (Node (Node Void 1 Void) 2 (Node Void 3 Void)) -- Output: 2
    size (Node (Node Void 1 Void) 2 (Node Void 3 Void)) -- Output: 3
    member 3 (Node (Node Void 1 Void) 2 (Node Void 3 Void)) -- Output: True
-   hojas (Node (Node Void 1 Void) 2 (Node Void 3 Void) -- Output: [1, 3]
+   hojas (Node (Node Void 1 Void) 2 (Node Void 3 Void)) -- Output: [1, 3]
    sumTree (Node (Node Void 1 Void) 2 (Node Void 3 Void)) -- Output: 6
    ```
 
 
 ---
 
-## Data Types
+## Tipos de Datos / Data Types
 
-### ÁrbolBinario
+### BinaryTree
 Un tipo de dato personalizado para árboles binarios. Se crea recursivamente; su nodo puede estar vacío o tener otro del mismo tipo.
 ```haskell
-data ÁrbolBinario = Void | Nodo ÁrbolBinario A ÁrbolBinario
+data BinaryTree = Void | Node BinaryTree A BinaryTree
 ```
 
 - `Void`: Representa un árbol vacío.
@@ -133,7 +133,7 @@ data BinaryTree = Void | Node BinaryTree A BinaryTree
 type A = Int
 ```
 
-## Functions
+## Funciones / Functions
 
 ### Operaciones con árboles binarios
 
@@ -194,6 +194,6 @@ Taduction :
 
 ---
 
-## License
+## Licencia / License
 Este proyecto está licenciado bajo la Licencia MIT. Consulte el archivo [LICENCIA](LICENCIA) para obtener más información.
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
