@@ -10,7 +10,7 @@
 
 - [Características / Features](#caracteristicas--features)
 - [Requisitos / Requirements](#requisitos--requirements)
-- [Instalación / Installation](#instalacion--installation)
+- [Instalación / Installation](#instalación--installation)
 - [Uso / Usage](#uso--usage)
 - - [Tipos de Datos / Data Types](#tipos-de-datos--data-types)
 - [Funciones / Functions](#funciones--functions)
