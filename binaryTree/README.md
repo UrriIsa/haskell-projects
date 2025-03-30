@@ -197,5 +197,6 @@ type A = Int
 
 ## Licencia / License
 Este proyecto está licenciado bajo la Licencia MIT. Consulte el archivo [LICENCIA](LICENCIA) para obtener más información.
+
 ***Traduction :***
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
