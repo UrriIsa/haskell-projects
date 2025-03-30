@@ -8,7 +8,7 @@
 
 ## Table of Contents
 
-- [Características / Features](#features)
+- [Características / Features](#características/features)
 - [Requisitos / Requirements](#requirements)
 - [Instalación / Installation](#installation)
 - [Uso / Usage](#usage)
@@ -19,7 +19,7 @@
 
 ---
 
-## Features
+## Características / Features
 
 Este módulo contiene utilidades para trabajar con árboles binarios en Haskell, incluyendo las siguientes operaciones:
 - Cálculo de altura
