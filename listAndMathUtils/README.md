@@ -62,8 +62,8 @@ ListAndMathUtils` es un módulo Haskell que proporciona utilidades básicas para
 
 1. Abre GHCi (intérprete de Haskell) desde tu terminal:
    ```bash
- ghci
- ```
+    ghci
+    ```
 2. Carga el módulo:
    ```haskell
    :load listAndMathUtils.hs
