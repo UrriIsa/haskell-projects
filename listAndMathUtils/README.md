@@ -126,8 +126,8 @@ ListAndMathUtils` es un módulo Haskell que proporciona utilidades básicas para
 ### 5. `bubbleSort`
  Ordena una lista usando el algoritmo Bubble Sort.
    ``haskell
- bubbleSort :: Ord a => [a] -> [a]
- ```
+    bubbleSort :: Ord a => [a] -> [a]
+    ```
 
 
 ***Traduction :***
