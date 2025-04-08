@@ -3,6 +3,7 @@
 `BinaryTreeUtils` es un módulo de Haskell que proporciona utilidades básicas para la manipulación de listas y cálculos matemáticos. El módulo incluye funciones para invertir listas, insertar números en listas ordenadas, ordenar usando Bubble Sort, calcular números de Fibonacci y calcular factoriales. Fue realizado en mi primer semestre. La traducciones al inglés están inmediatamente después de lo escrito en español-
 
 ***Traduction :***
+
 `BinaryTreeUtils` is a Haskell module that provides basic utilities for list manipulation and mathematical computations. The module includes functions for reversing lists, inserting numbers into sorted lists, sorting using Bubble Sort, computing Fibonacci numbers, and calculating factorials. It was done in my first semester. The English translations follow immediately after the Spanish text.
 
 ---
@@ -82,6 +83,7 @@ This module contains utilities for working with binary trees in Haskell, includi
     ```
 
 ***Traduction :***
+
 1. Open GHCi (Haskell interpreter) from your terminal:
    ```bash
    ghci
