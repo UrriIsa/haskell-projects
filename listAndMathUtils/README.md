@@ -39,6 +39,10 @@ ListAndMathUtils` es un módulo Haskell que proporciona utilidades básicas para
 
 ## Requisitos / Requirements
 
+- [GHC (Compilador Glasgow Haskell)](https://www.haskell.org/ghc/) versión 8.0 o superior.
+
+***Traduction :***  
+
 - [GHC (Glasgow Haskell Compiler)](https://www.haskell.org/ghc/) version 8.0 or higher.
 
 ---
