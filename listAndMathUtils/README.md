@@ -100,67 +100,34 @@ ListAndMathUtils` es un módulo Haskell que proporciona utilidades básicas para
 ## Functions
 
 ### 1. `fib`
- Calcula el enésimo número de la sucesión de Fibonacci.
+ Calcula el enésimo número de la sucesión de Fibonacci. ***Traduction :*** Computes the nth number in the Fibonacci sequence.
    ```haskell
  fib :: Integer -> Integer
  ```
 
-### 2. `factorial` Calcula el factorial de un entero. `factorial`
- Calcula el factorial de un entero.
+### 2. `factorial` 
+ Calcula el factorial de un entero. ***Traduction :*** Calculates the factorial of an integer.
    ```haskell
  factorial :: Integer -> Integer
  ```
 
 ### 3. `factorial` Calcula el factorial de un entero. `revertirLista`
- Invierte una lista recursivamente.
+ Invierte una lista recursivamente. ***Traduction :*** Reverses a list recursively.
    ```haskell
  revertirLista :: [a] -> [a]
  ```
 
-### 4. `insertaNum`
- Inserta un número en una lista ordenada manteniendo el orden.
+### 4. `insertaNum` 
+ Inserta un número en una lista ordenada manteniendo el orden. ***Traduction :*** Inserts a number into a sorted list while maintaining the order.
    ```haskell
  insertaNum :: Integer -> [Integer] -> [Integer]
  ```
 
 ### 5. `bubbleSort`
- Ordena una lista usando el algoritmo Bubble Sort.
-   ``haskell
+ Ordena una lista usando el algoritmo Bubble Sort. ***Traduction :*** Sorts a list using the Bubble Sort algorithm.
+   ```haskell
     bubbleSort :: Ord a => [a] -> [a]
     ```
-
-
-***Traduction :***
-
-### 1. `fib`
-   Computes the nth number in the Fibonacci sequence.
-   ```haskell
-      fib :: Integer -> Integer
-   ```
-
-### 2. `factorial`
-   Calculates the factorial of an integer.
-   ```haskell
-      factorial :: Integer -> Integer
-   ```
-
-### 3. `revertirLista`
-   Reverses a list recursively.
-   ```haskell
-      revertirLista :: [a] -> [a]
-   ```
-
-### 4. `insertaNum`
-   Inserts a number into a sorted list while maintaining the order.
-   ```haskell
-      insertaNum :: Integer -> [Integer] -> [Integer]
-   ```
-
-### 5. `bubbleSort`
-   Sorts a list using the Bubble Sort algorithm.
-   ```haskell
-      bubbleSort :: Ord a => [a] -> [a]
-   ```
 
 ---
 
