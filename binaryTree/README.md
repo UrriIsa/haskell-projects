@@ -107,11 +107,7 @@ This module contains utilities for working with binary trees in Haskell, includi
 ## Tipos de Datos / Data Types
 
 ### BinaryTree
-Un tipo de dato personalizado para árboles binarios. Se crea recursivamente; su nodo puede estar vacío o tener otro del mismo tipo.
-
-***Traduction :***
-
-A custom data type for binary trees. It is created recursively, its node can be empty or have another of the same type.
+Un tipo de dato personalizado para árboles binarios. Se crea recursivamente; su nodo puede estar vacío o tener otro del mismo tipo. ***Traduction :*** A custom data type for binary trees. It is created recursively, its node can be empty or have another of the same type.
 ```haskell
 data BinaryTree = Void | Node BinaryTree A BinaryTree
 ```
@@ -130,47 +126,27 @@ type A = Int
 ### Operaciones con árboles binarios
 
 - **`height`**
-    Calcula la altura de un árbol binario.
-      
-    ***Traduction :***
-
-    Calculates the height of a binary tree.
+    Calcula la altura de un árbol binario. ***Traduction :*** Calculates the height of a binary tree.
     ```haskell
     height :: BinaryTree -> Int
     ```
 - **`size`**
-    Calcula el tamaño (número de nodos) de un árbol binario.
-        
-    ***Traduction :***
-
-    Calculates the size (number of nodes) of a binary tree.
+    Calcula el tamaño (número de nodos) de un árbol binario. ***Traduction :*** Calculates the size (number of nodes) of a binary tree.
     ```haskell
     size :: BinaryTree -> Int
     ```
 - **`member`**
-    Comprueba si existe un valor en el árbol binario.
-          
-    ***Traduction :***
-  
-    Checks if a value exists in the binary tree.
+    Comprueba si existe un valor en el árbol binario. ***Traduction :*** Checks if a value exists in the binary tree.
     ```haskell
     member :: A -> BinaryTree -> Bool
     ```
 - **`hojas`**
-    Obtiene las hojas de un árbol binario.
-            
-    ***Traduction :***
-
-    Retrieves the leaves of a binary tree.
+    Obtiene las hojas de un árbol binario. ***Traduction :*** Retrieves the leaves of a binary tree.
     ```haskell
     hojas :: BinaryTree -> [A]
     ```
 - **`sumTree`**
-    Calcula la suma de todos los nodos del árbol.
-              
-    ***Traduction :***
-
-    Computes the sum of all the nodes in the tree.
+    Calcula la suma de todos los nodos del árbol. ***Traduction :*** Computes the sum of all the nodes in the tree.
     ```haskell
     sumTree :: BinaryTree -> Int
     ```
