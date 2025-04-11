@@ -150,9 +150,7 @@ type A = Int
     ```haskell
     sumTree :: BinaryTree -> Int
     ```
-
-   ```
-
+    
 ---
 
 ## Licencia / License
