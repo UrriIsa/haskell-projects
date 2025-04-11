@@ -97,7 +97,7 @@ ListAndMathUtils` es un módulo Haskell que proporciona utilidades básicas para
    ```
 ---
 
-## Functions
+## Funciones / Functions
 
 ### 1. `fib`
  Calcula el enésimo número de la sucesión de Fibonacci. ***Traduction :*** Computes the nth number in the Fibonacci sequence.
