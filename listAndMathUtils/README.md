@@ -115,7 +115,7 @@ ListAndMathUtils` es un módulo Haskell que proporciona utilidades básicas para
  factorial :: Integer -> Integer
  ```
 
-### 3. `factorial` Calcula el factorial de un entero. `revertirLista`
+### 3. `revertirLista`
  Invierte una lista recursivamente. ***Traduction :*** Reverses a list recursively.
    ```haskell
  revertirLista :: [a] -> [a]
