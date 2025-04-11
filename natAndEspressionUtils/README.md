@@ -1,24 +1,32 @@
 
 # NatAndExpressionUtils
 
+`NatAndExpressionUtils` es un módulo Haskell que proporciona operaciones sobre números naturales, listas personalizadas y expresiones algebraicas. Incluye funciones para realizar sumas, multiplicaciones, cálculos factoriales y analizar expresiones. Lo hice en mi primer semestre.
+
+***Traduction :***
+
 `NatAndExpressionUtils` is a Haskell module that provides operations on natural numbers, custom lists, and algebraic expressions. It includes functions for performing addition, multiplication, factorial calculations, and analyzing expressions. It was done in my first semester.
 
 ## Table of Contents
 
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Data Types](#data-types)
-- [Functions](#functions)
-   - [Operations on Natural Numbers](#operations-on-natural-numbers)
-   - [Operations on Custom Lists](#operations-on-custom-lists)
-   - [Expression Analysis](#expression-analysis)
-- [License](#license)
+- [Características / Features](#caracteristicas--features)
+- [Requisitos / Requirements](#requisitos--requirements)
+- [Instalación / Installation](#instalación--installation)
+- [Uso / Usage](#uso--usage)
+- [Tipos de Dato / Data Types](#tipos-de-dato--data-types)
+- [Funciones / Functions](#funciones--functions)
+- [Licencia / License](#licencia--license)
+
 
 ---
 
-## Features
+## Caracteristicas / Features
+
+- Operaciones básicas con números naturales (suma, producto, factorial, potencia).
+- Manipulación de listas personalizadas (longitud, concatenación e inversión).
+- Análisis de expresiones algebraicas (conteo de constantes, variables y operadores).
+  
+***Traduction :***  
 
 - Basic operations with natural numbers (sum, product, factorial, power).
 - Manipulation of custom lists (length, concatenation, and reversal).
@@ -26,13 +34,23 @@
 
 ---
 
-## Requirements
+## Requisitos / Requirements
+
+- [GHC (Compilador Glasgow Haskell)](https://www.haskell.org/ghc/) versión 8.0 o superior.
+
+***Traduction :***  
 
 - [GHC (Glasgow Haskell Compiler)](https://www.haskell.org/ghc/) version 8.0 or higher.
 
 ---
 
-## Installation
+## Instalación / Installation
+
+1. Clona este repositorio o descarga el archivo `natAndExpressionUtils.hs`.
+2. Asegúrate de que tienes GHC y GHCi instalados en tu sistema.
+3. Guarda el archivo en el directorio de su proyecto.
+
+***Traduction :***  
 
 1. Clone this repository or download the `natAndExpressionUtils.hs` file.
 2. Make sure you have GHC and GHCi installed on your system.
@@ -40,7 +58,28 @@
 
 ---
 
-## Usage
+## Uso / Usage
+
+1. Abre GHCi (el intérprete de Haskell) desde tu terminal:
+   ```bash
+    ghci
+    ```
+
+2. Carga el módulo:
+   ```haskell
+   :load natAndExpressionUtils.hs
+    ```
+
+3. Utiliza las funciones definidas en el módulo. Utiliza las funciones definidas en el módulo. Ejemplos:
+
+   ```haskell
+    suma (Suc (Suc Cero)) (Suc Cero) -- Salida:Suc (Suc (Suc Cero))
+    longitud (Cons 1 (Cons 2 Vacia)) -- Salida: Suc (Suc Cero)
+    contarConstantes (Suma (Num Pos Cero) (Var "x")) -- Salida: 1 
+    ```
+
+***Traduction :***  
+
 
 1. Open GHCi (the Haskell interpreter) from your terminal:
    ```bash
@@ -62,16 +101,16 @@
 
 ---
 
-## Data Types
+## Tipos de Datos /Data Types
 
 ### `Nat`  
-A custom data type for natural numbers, starting from zero and defined recursively.
+Un tipo de datos personalizado para números naturales, empezando por cero y definido recursivamente. ***Traduction :*** A custom data type for natural numbers, starting from zero and defined recursively.
 ```haskell
 data Nat = Cero | Suc Nat
 ```
 
 ### `Expresion`  
-An algebraic expression consisting of constants, variables, and basic arithmetic operations.
+Expresión algebraica formada por constantes, variables y operaciones aritméticas básicas. ***Traduction :*** An algebraic expression consisting of constants, variables, and basic arithmetic operations.
 ```haskell
 data Expresion = Num Signo Nat  
                | Var String
@@ -82,94 +121,97 @@ data Expresion = Num Signo Nat
 ```
 
 ### `Lista a`  
-A custom list data type with two constructors: empty list and a list with elements.
+Un tipo de datos de lista personalizado con dos constructores: lista vacía y lista con elementos. ***Traduction :*** A custom list data type with two constructors: empty list and a list with elements.
 ```haskell
 data Lista a = Vacia | Cons a (Lista a)
 ```
 
 ---
 
-## Functions
+## Funciones / Functions
 
-### 1. Operations on Natural Numbers
+### 1. Operaciones con números naturales / Operations on Natural Numbers
 
 - **`suma`** 
-  Adds two natural numbers.
+  Suma dos números naturales. ***Traduction :*** Adds two natural numbers.
   ```haskell
   suma :: Nat -> Nat -> Nat
   ```
 
 - **`prod`**  
-  Multiplies two natural numbers.
+  Multiplica dos números naturales. ***Traduction :*** Multiplies two natural numbers.
   ```haskell
   prod :: Nat -> Nat -> Nat
   ```
 
 - **`fac`**  
-  Calculates the factorial of a natural number.
+  Calcula el factorial de un número natural. ***Traduction :*** Calculates the factorial of a natural number.
   ```haskell
   fac :: Nat -> Nat
   ```
 
 - **`pot`**  
-  Computes the power of a natural number raised to another.
+  Calcula la potencia de un número natural elevado a otro. ***Traduction :*** Computes the power of a natural number raised to another.
   ```haskell
   pot :: Nat -> Nat -> Nat
   ```
 
 - **`ant`**  
-  Computes the predecessor of a natural number.
+  Calcula el predecesor de un número natural. ***Traduction :*** Computes the predecessor of a natural number.
   ```haskell
   ant :: Nat -> Nat
   ```
 
 ---
 
-### 2. Operations on Custom Lists
+### 2. Operaciones con listas personalizadas / Operations on Custom Lists
 
 - **`longitud`**  
-  Returns the length of a custom list.
+  Devuelve la longitud de una lista personalizada. ***Traduction :*** Returns the length of a custom list.
   ```haskell
   longitud :: Lista a -> Nat
   ```
 
 - **`concate`**  
-  Concatenates two custom lists.
+  Concatena dos listas personalizadas. ***Traduction :*** Concatenates two custom lists.
   ```haskell
   concate :: Lista a -> Lista a -> Lista a
   ```
 
 - **`rev`**  
-  Reverses a custom list.
+  Invierte una lista personalizada. ***Traduction :*** Reverses a custom list.
   ```haskell
   rev :: Lista a -> Lista a
   ```
 
 ---
 
-### 3. Expression Analysis
+### 3. Análisis de expresión / Expression Analysis
 
 - **`contarConstantes`**  
-  Counts the number of constants in an expression.
+  Cuenta el número de constantes de una expresión. ***Traduction :*** Counts the number of constants in an expression.
   ```haskell
   contarConstantes :: Expresion -> Int
   ```
 
 - **`contarVariables`**  
-  Counts the number of variables in an expression.
+  Cuenta el número de variables de una expresión. ***Traduction :*** Counts the number of variables in an expression.
   ```haskell
   contarVariables :: Expresion -> Int
   ```
 
 - **`contarOperadores`**  
-  Counts the number of operators in an expression.
+  Cuenta el número de operadores de una expresión. ***Traduction :*** Counts the number of operators in an expression.
   ```haskell
   contarOperadores :: Expresion -> Int
   ```
 
 ---
 
-## License
+## Licencia / License
+Este proyecto está licenciado bajo la Licencia MIT. Consulte el archivo [LICENCIA](LICENCIA) para obtener más información.
 
+***Traduction :***
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
